@@ -195,3 +195,108 @@ a.cta:hover {
     margin: 0px; }
   article {
     padding: 30px; } }
+
+body.p10 {
+  background-color: #fff;
+  border-top: 5px solid #181924; }
+
+a.logo {
+  max-width: 30px;
+  padding: 0px 0px 30px 0px;
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 30px; }
+  a.logo img {
+    max-width: 100%;
+    height: auto; }
+
+.p10 main {
+  max-width: 600px;
+  margin: 72px auto; }
+  .p10 main .masthead img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: 0px auto;
+    display: block; }
+  .p10 main .masthead h1 {
+    font-size: 40px;
+    color: #2F353C;
+    text-align: center;
+    font-weight: 300; }
+  .p10 main .masthead h2 {
+    text-align: center;
+    color: #79828D;
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding: 20px 0px;
+    max-width: 100%;
+    line-height: 1; }
+
+.disclosure {
+  max-width: 250px;
+  position: fixed;
+  top: 76px;
+  left: 30px; }
+  .disclosure p {
+    color: #79828D;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.8; }
+    .disclosure p a {
+      color: #64B87F;
+      text-decoration: underline; }
+
+.nav {
+  position: fixed;
+  top: 170px;
+  left: 30px; }
+  .nav ul li a {
+    color: #0F38FF;
+    font-size: 12px;
+    display: block;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid #ddd;
+    -moz-transition: all 350ms ease;
+    -webkit-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    .nav ul li a:hover {
+      -moz-transition: all 350ms ease;
+      -webkit-transition: all 350ms ease;
+      -o-transition: all 350ms ease;
+      transition: all 350ms ease;
+      background-color: #f4f4f4;
+      padding: 10px 0px 10px 10px; }
+  .nav ul li ul {
+    padding: 0px 0px 0px 20px; }
+
+.content h1 {
+  font-size: 20px;
+  color: #2F353C;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0px 0px 20px 0px; }
+
+.content p {
+  color: #79828D;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0px 0px 20px 0px; }
+
+.content h2 {
+  color: #79828D;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+  letter-spacing: 0px;
+  text-transform: none; }
+
+.content strong {
+  font-weight: 700;
+  color: #181924; }

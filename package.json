@@ -7,14 +7,12 @@
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
-    "gulp-if": "^2.0.0",
-    "gulp-minify-css": "^1.2.3",
-    "gulp-sass": "^2.2.0",
-    "gulp-uglify": "^1.5.2",
-    "gulp-useref": "^3.0.6"
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
