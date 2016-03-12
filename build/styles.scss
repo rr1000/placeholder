@@ -1,3 +1,4 @@
+@import "//fonts.googleapis.com/css?family=Roboto:400,100,300,400italic,500,700,700italic,900";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,58 +20,73 @@ blockquote:before, blockquote:after,
 q:before, q:after{content: '';content: none;}
 table{border-collapse: collapse;border-spacing: 0;}
 *, *:after, *:before{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+// Vars
+$c_white: #fff;
+$c_dark: #181924;
+$c_dark-mid: #2F353C;
+$c_dark-light: #79828D;
+$c_blue: #0F38FF;
 // Homepage
 body{
     font-family: 'Roboto', sans-serif;
     line-height: 1;
-    background-color: #181924;
+    background-color: #fff;
 }
-a{color: #FFD27D;text-decoration: none;}
+a{color: $c_blue;text-decoration: none;}
 h3,
 h2{
     font-size: 14px;
     line-height: 1.8;
-    color: #fff;
-    font-weight: 400;
+    color: $c_dark;
+    font-weight: 300;
     max-width: 80%;
 }
 h2{
     padding: 0px 0px 10px 0px;
-    color: #fff;
+    color: $c_dark-light;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
 }
-h3{font-style: italic;}
+h3{
+    font-weight: 300;
+    font-size: 30px;
+}
 .hr{
     height: 3px;
     border-radius: 20px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(0,0,0,0.2);
     width: 100px;
     margin: 30px 0px;
 }
-nav{padding: 30px 0px 0px 0px;}
+.container{max-width: 500px;margin: 0px auto;}
+nav{background-color: $c_dark;}
 nav a{
+    color: #fff;
     display: block;
-    font-size: 14px;
-    padding: 10px 10px 10px 0px;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 30px;
     -moz-transition: all 350ms ease;
     -webkit-transition: all 350ms ease;
     -o-transition: all 350ms ease;
     transition: all 350ms ease;
-    border-radius: 5px;
-    border: 1px solid transparent;
+    background-color: $c_dark;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    border-bottom: 2px solid rgba(0,0,0,0.4);
 }
 nav a:hover{
-    background-color: rgba(0,0,0,0.3);
+    padding-left: 20px;
     -moz-transition: all 350ms ease;
     -webkit-transition: all 350ms ease;
     -o-transition: all 350ms ease;
     transition: all 350ms ease;
-    padding: 10px;
-    border: 1px solid rgba(0,0,0,0.8);
+    color: #FFF8A5;
 }
-nav a span.date{display: inline-block; color: #fff;}
+nav a span.date{display: inline-block; color: #999;}
 nav a span.title{display: inline-block; margin: 0px 0px 0px 10px;}
 nav a.disabled{
     cursor: not-allowed;
@@ -78,20 +94,41 @@ nav a.disabled{
 }
 section p{
     font-size: 14px;
-    line-height: 1.8;
-    color: #fff;
-    font-weight: 300;
+    line-height: 2;
+    color: $c_dark-light;
+    font-weight: 400;
     padding: 0px 0px 10px 0px;
 }
 section p:last-of-type{padding: 0px;}
 footer a{
-    display: inline-block;
+    display: block;
     font-size: 14px;
     margin: 0px 10px 0px 0px;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    -moz-transition: all 350ms ease;
+    -webkit-transition: all 350ms ease;
+    -o-transition: all 350ms ease;
+    transition: all 350ms ease;
+    &:last-of-type{border-bottom: 0px;}
+    &:hover{
+        -moz-transition: all 350ms ease;
+        -webkit-transition: all 350ms ease;
+        -o-transition: all 350ms ease;
+        transition: all 350ms ease;
+        color: $c_dark;
+        padding-left: 10px;
+    }
 }
 .logo{
     max-width: 30px;
     padding: 0px 0px 30px 0px;
+}
+.pad-wrapper{
+    padding: 50px 30px;
 }
 .logo img{max-width: 100%;height: auto;}
 article{
@@ -100,7 +137,6 @@ article{
     left: 0px;
     bottom: 0px;
     z-index: 99;
-    padding: 50px;
     max-width: 500px;
     margin: 0px auto;
 }
@@ -116,32 +152,9 @@ article{
     box-shadow: 0px 20px 30px #999;
 }
 a:hover{color: #B7FF7D;}
-a.cta{
-    display: block;
-    padding: 10px;
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    border-radius: 5px;
-    color: #fff;
-    width: 200px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    /*background-color: #455072;*/
-    margin: 0px 0px 30px 0px;
-    text-shadow: 1px 1px 2px #006D4A;
-    background-color: #3e76d2;
-    background: -webkit-linear-gradient(top,#C0EEA0,#379480);
-    background: -moz-linear-gradient(to bottom,#C0EEA0,#379480);
-    background: -ms-linear-gradient(top,#C0EEA0,#379480);
-    background: -o-linear-gradient(top,#C0EEA0,#379480);
-    background: linear-gradient(top,#C0EEA0,#379480);
-    box-shadow: 0px 2px 3px 0px rgba(16,37,20,0.10),
-                0px 1px 1px 0px rgba(14,54,38,0.20);
-}
 a.cta:hover{color: #fff;}
 @media all and (max-width: 570px){
+    .pad-wrapper{padding: 30px;}
     nav a span.date{
         display: block;
         padding: 0px 0px 10px 0px;
@@ -152,6 +165,5 @@ a.cta:hover{color: #fff;}
         padding: 0px;
         margin: 0px;
     }
-    article{padding: 30px;}
 }
 @import "p10";

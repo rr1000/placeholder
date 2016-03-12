@@ -13,9 +13,7 @@ g.task('browserSync', function(){
 });
 
 g.task('templates', function (){
-    var templateData = {
-        firstName: 'Kaanon'
-    },
+    var templateData = { /*..*/ },
     options = {
         ignorePartials: true,
         partials : {
