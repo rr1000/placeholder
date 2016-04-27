@@ -29,7 +29,7 @@ $c_gray: #7980B7;
 $c_alt-link: #1F5A76;
 // Main
 body{
-    font-size: 14px;
+    font-size: 12px;
     font-family: $f_main;
     border-top: 5px solid $c_blue;
 }
@@ -58,6 +58,7 @@ nav{
 main{
     max-width: 450px;
     margin: 50px auto;
+    position: relative;
     img{max-width: 100%;height: auto;width: 100%;margin: 0px 0px 30px 0px;}
     .logo{
         background: url('img/logo.png');
@@ -97,7 +98,6 @@ main{
     left: 0px;
     letter-spacing: 2px;
     cursor: pointer;
-    &:hover{background-color: darken($c_gray, 10%);}
 }
 .menu-retract{
     left: 0px;
@@ -119,8 +119,70 @@ main{
     top: 0px;
     border-top: 5px solid $c_blue;
 }
+.scrib{
+    img{
+        position: fixed;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .v_9{
+        top: 30px;
+        left: 10px;
+    }
+    .v_10{
+        top: 421px;
+        left: 45px;
+    }
+}
+.markup{
+    img{
+        position: absolute;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .v_1{
+        width: 44px;
+    }
+    .v_2{
+        width: 222px;
+        top: 112px;
+    }
+    .v_3{
+        width: 71px;
+        top: 160px;
+        left: 180px;
+    }
+    .v_4{
+        width: 15px;
+        top: 212px;
+        right: 105px
+    }
+    .v_5{
+        width: 129px;
+        top: 220px;
+        right: -100px
+    }
+    .v_6{
+        width: 112px;
+        top: 262px;
+        left: 25px;
+    }
+    .v_7{
+        width: 190px;
+        top: 676px;
+    }
+    .v_8{
+        width: 31px;
+        top: 692px;
+        left: 149px;
+    }
+}
 @media all and (max-width: 1200px){
-    nav{left: -287px;}
+    .scrib{display: none;}
+    .markup{display: none;}
+    nav{z-index: 99;left: -287px;}
     .menu-btn{display: inline-block;}
 }
 @media all and (max-width: 500px){
