@@ -1,0 +1,25 @@
+article{
+    max-width: 650px;
+    margin: 33px auto 30px auto;
+    img{
+        max-width: 300px;
+        width: 100%;
+        display: block;
+        margin: 0px auto 20px auto;
+    }
+    p{
+        font-size: 16px;
+        line-height: 1.8;
+        margin: 0px 0px 20px 0px;
+        color: $c_dark;
+        a{
+            color: $c_pink;
+            text-decoration: none;
+            @include easing(350ms);
+            &:hover{
+                @include easing(350ms);
+                color: $c_purple;
+            }
+        }
+    }
+}

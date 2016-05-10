@@ -1,13 +1,10 @@
-## ryanSrich.com
+# Portfolio
 
-**Getting started**
+## Local
 
-Install gulp and run `npm install`
+- Ruby and all that jazz
 
-**Commands**
+## How
 
-`gulp watch`
-
-**Blog**
-
-I use [hexo](//hexo.io) to power the blog. This is contained within a [separate repo](https://github.com/rr1000/cd-writing-ls--la) - *note: this is not a submodule*
+- All rake tasks
+- Built on middleman

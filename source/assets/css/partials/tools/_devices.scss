@@ -1,0 +1,65 @@
+@media handheld, only screen and (max-width: 767px){
+    header{
+        nav,
+        .logo{
+            position: relative;
+            float: left;
+            top: 0px;
+            left: 0px;
+        }
+        nav{float: right;}
+    }
+    article,
+    section{
+        margin: 0px 30px 30px 30px;
+        max-width: 100%;
+        ul{
+            margin: 0px;
+            li{
+                a{
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    main{
+        margin: 0px 30px 30px 30px;
+        p,
+        h2,
+        h1{
+            margin: 0px 0px 20px 0px;
+            max-width: 100%;
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin: 0px 0px 20px 0px;
+        }
+    }
+    footer{
+        margin: 0px 30px 30px 30px;
+    }
+    .grid{
+        width: 100%;
+        min-width: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    [class*='col-']{
+        width: auto;
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

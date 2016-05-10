@@ -1,0 +1,26 @@
+section{
+    max-width: 650px;
+    margin: auto;
+    ul{
+        margin: 13px 30px 10px 76px;
+        li{
+            display: block;
+            a{
+                font-size: 22px;
+                text-decoration: none;
+                color: $c_dark;
+                padding: 20px 0px;
+                border-bottom: 1px solid $c_border;
+                display: block;
+                @include easing(350ms);
+                &:hover{
+                    @include easing(350ms);
+                    padding: 20px 0px 20px 10px;
+                    color: $c_pink;
+                }
+                span{color: $c_light;}
+            }
+            &:last-of-type{a{border-bottom: 0px;}}
+        }
+    }
+}
