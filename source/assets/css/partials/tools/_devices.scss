@@ -1,44 +1,25 @@
 @media handheld, only screen and (max-width: 767px){
     nav{
-        padding: 20px;
         a{
-            display: inline-block;
-            padding: 0px 20px;
-            color: $c_white;
-            text-decoration: none;
-            opacity: 0.3;
-            font-size: 25px;
-            font-weight: 400;
-            @include easing(350ms);
-            &:hover{
-                @include easing(350ms);
-                opacity: 1.0;
-            }
+            font-size: 16px;
+            font-weight: 300;
         }
         a.s{opacity: 1.0;}
     }
     .ihavenoideawhatimdoing{
-        padding: 0px 40px;
-        margin: 100px auto;
+        margin: 50px auto;
         p,
         h2,h1{
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
-            color: $c_white;
-            font-size: 22px;
-            line-height: 1.5;
-            max-width: 550px;
+            font-size: 16px;
+            font-weight: 300;
         }
         h2{
-            padding: 10px 0px 0px 0px;
-            opacity: 0.3;
             font-size: 16px;
-            font-weight: 400;
+            font-weight: 300;
         }
         p{
             font-size: 16px;
-            padding: 0px 0px 20px 0px;
+            font-weight: 300;
             @include easing(350ms);
             a{
                 color: $c_white;
@@ -52,20 +33,12 @@
         .a{
             margin: 40px 0px;
             a{
+                font-size: 16px;
+                font-weight: 300;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 display: block;
-                text-decoration: none;
-                color: $c_white;
-                font-weight: 400;
-                padding: 20px 20px 20px 0px;
-                border-bottom: 1px solid rgba(255,255,255,0.1);
-                font-size: 22px;
-                @include easing(350ms);
-                &:last-of-type{border-bottom: 0px;}
-                &:hover{
-                    @include easing(350ms);
-                    padding: 20px 20px 20px 20px;
-                    opacity: 0.3;
-                }
             }
         }
     }
