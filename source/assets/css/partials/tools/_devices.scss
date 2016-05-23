@@ -1,65 +1,73 @@
 @media handheld, only screen and (max-width: 767px){
-    header{
-        nav,
-        .logo{
-            position: relative;
-            float: left;
-            top: 0px;
-            left: 0px;
+    nav{
+        padding: 20px;
+        a{
+            display: inline-block;
+            padding: 0px 20px;
+            color: $c_white;
+            text-decoration: none;
+            opacity: 0.3;
+            font-size: 25px;
+            font-weight: 400;
+            @include easing(350ms);
+            &:hover{
+                @include easing(350ms);
+                opacity: 1.0;
+            }
         }
-        nav{float: right;}
+        a.s{opacity: 1.0;}
     }
-    article,
-    section{
-        margin: 0px 30px 30px 30px;
-        max-width: 100%;
-        ul{
-            margin: 0px;
-            li{
-                a{
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    font-size: 16px;
+    .ihavenoideawhatimdoing{
+        padding: 0px 40px;
+        margin: 100px auto;
+        p,
+        h2,h1{
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            color: $c_white;
+            font-size: 22px;
+            line-height: 1.5;
+            max-width: 550px;
+        }
+        h2{
+            padding: 10px 0px 0px 0px;
+            opacity: 0.3;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        p{
+            font-size: 16px;
+            padding: 0px 0px 20px 0px;
+            @include easing(350ms);
+            a{
+                color: $c_white;
+                @include easing(350ms);
+                &:hover{
+                    @include easing(350ms);
+                    opacity: 0.3;
+                }
+            }
+        }
+        .a{
+            margin: 40px 0px;
+            a{
+                display: block;
+                text-decoration: none;
+                color: $c_white;
+                font-weight: 400;
+                padding: 20px 20px 20px 0px;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+                font-size: 22px;
+                @include easing(350ms);
+                &:last-of-type{border-bottom: 0px;}
+                &:hover{
+                    @include easing(350ms);
+                    padding: 20px 20px 20px 20px;
+                    opacity: 0.3;
                 }
             }
         }
     }
-    main{
-        margin: 0px 30px 30px 30px;
-        p,
-        h2,
-        h1{
-            margin: 0px 0px 20px 0px;
-            max-width: 100%;
-            width: 100%;
-        }
-        img{
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            margin: 0px 0px 20px 0px;
-        }
-    }
-    footer{
-        margin: 0px 30px 30px 30px;
-    }
-    .grid{
-        width: 100%;
-        min-width: 0;
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    [class*='col-']{
-        width: auto;
-        float: none;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+
 }
