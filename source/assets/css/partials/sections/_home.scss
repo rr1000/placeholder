@@ -16,11 +16,44 @@ section{
                 &:hover{
                     @include easing(350ms);
                     padding: 20px 0px 20px 10px;
-                    color: $c_pink;
+                    color: $c_purple;
                 }
                 span{color: $c_light;}
             }
             &:last-of-type{a{border-bottom: 0px;}}
         }
+    }
+}
+.intro{
+    background-color: $c_midnight;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    h1{
+        font-size: 85px;
+        text-align: center;
+        margin-top: 20.99%;
+        color: $c_white;
+        font-weight: 700;
+        letter-spacing: -5px;
+    }
+}
+.ihavenoideawhatimdoing{
+    text-align: center;
+    color: $c_white;
+    max-width: 400px;
+    line-height: 1.5;
+    margin: 100px auto;
+    font-size: 16px;
+    font-style: italic;
+    article{padding: 30px;}
+    h2{
+        padding: 20px 0px 0px 0px;
+        opacity: 0.3;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
     }
 }

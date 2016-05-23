@@ -1,9 +1,11 @@
 footer{
-    margin: 0px 30px 30px 76px;
+    max-width: 650px;
+    margin: auto;
     p{
+        margin: 0px 0px 0px 76px;
         font-size: 12px;
         color: $c_light;
-        &:first-of-type{margin: 0px 0px 10px 0px;}
+        &:first-of-type{margin: 0px 0px 10px 76px;}
         span{color: $c_green;}
     }
 }
