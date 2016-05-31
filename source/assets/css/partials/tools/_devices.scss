@@ -23,7 +23,7 @@
         .col-3-12{
             .left{
                 color: $c_white;
-                background-color: $c_dark;
+                background-color: $c_blue;
                 padding: 20px;
                 margin: 30px 80px 30px 30px;
                 .yella{
@@ -55,6 +55,7 @@
                 .yella{
                     max-height: 80px;
                     overflow: hidden;
+                    span{display: none;}
                 }
             }
         }
