@@ -1,5 +1,10 @@
 @media handheld, only screen and (max-width: 900px){
     .grid-pad{padding: 0px;}
+    .canvas-wrapper{
+        width: 100%;
+        text-align: center;
+        right: 0px;
+    }
     .alwaysmore{
         width: 50px;
         color: $c_blue;
@@ -26,8 +31,8 @@
     .h{
         .col-3-12{
             .left{
-                color: $c_white;
-                background-color: $c_blue;
+                color: $c_blue;
+                border: 3px solid $c_blue;
                 padding: 20px;
                 margin: 30px 80px 30px 30px;
                 .yella{color: $c_white;}

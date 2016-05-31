@@ -109,3 +109,12 @@ body{
         }
     }
 }
+// Canvas
+.canvas-wrapper{
+    position: fixed;
+    top: 0px;
+    right: 150px;
+}
+canvas{
+    display: inline;
+}
