@@ -1,46 +1,74 @@
-@media handheld, only screen and (max-width: 767px){
-    nav{
-        a{
-            font-size: 16px;
-            font-weight: 300;
-        }
-        a.s{opacity: 1.0;}
+@media handheld, only screen and (max-width: 900px){
+    .grid-pad{padding: 0px;}
+    .alwaysmore{width: 50px;}
+    .grid{
+        width: 100%;
+        min-width: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
-    .ihavenoideawhatimdoing{
-        margin: 50px auto;
-        p,
-        h2,h1{
-            font-size: 16px;
-            font-weight: 300;
-        }
-        h2{
-            font-size: 16px;
-            font-weight: 300;
-        }
-        p{
-            font-size: 16px;
-            font-weight: 300;
-            @include easing(350ms);
-            a{
+    [class*='col-']{
+        width: auto;
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .h{
+        .col-3-12{
+            .left{
                 color: $c_white;
-                @include easing(350ms);
-                &:hover{
-                    @include easing(350ms);
-                    opacity: 0.3;
+                background-color: $c_dark;
+                padding: 20px;
+                margin: 30px 80px 30px 30px;
+                .yella{
+                    background-color: rgba(0,0,0,0.3);
                 }
             }
         }
-        .a{
-            margin: 40px 0px;
-            a{
-                font-size: 16px;
-                font-weight: 300;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: block;
+        .col-9-12{
+            .right{
+                border-left: 0px;
+                background-color: rgba(0,0,0,0.1);
+                padding: 20px;
+                margin: 30px 60px 30px 30px;
+                nav{margin: 0px;}
+                p{
+                    margin: 0px 0px 20px 0px;
+                    &:first-of-type{margin: 20px 0px 20px 0px;}
+                    &:last-of-type{margin: 0px 0px 20px 0px;}
+                }
             }
         }
     }
-
+}
+@media handheld, only screen and (max-width: 550px){
+    .h{
+        .col-3-12{
+            .left{
+                margin: 10px 60px 10px 10px;
+                .yella{
+                    max-height: 80px;
+                    overflow: hidden;
+                }
+            }
+        }
+        .col-9-12{
+            .right{
+                margin: 10px 40px 10px 10px;
+                nav{
+                    a{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+    }
 }

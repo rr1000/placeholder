@@ -1,69 +1,105 @@
-nav{
-    padding: 20px;
+body{
     a{
-        display: inline-block;
-        padding: 0px 20px;
-        color: $c_white;
-        text-decoration: none;
-        opacity: 0.3;
-        font-size: 25px;
-        font-weight: 100;
         @include easing(350ms);
-        &:hover{
-            @include easing(350ms);
-            opacity: 1.0;
-        }
+        &:hover{@include easing(350ms);}
     }
-    a.s{opacity: 1.0;}
 }
-.ihavenoideawhatimdoing{
-    padding: 0px 40px;
-    margin: 100px auto;
-    p,
-    h2,h1{
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 100;
-        color: $c_white;
-        font-size: 22px;
-        line-height: 1.5;
-        max-width: 550px;
-    }
-    h2{
-        padding: 10px 0px 0px 0px;
-        opacity: 0.3;
-        font-size: 16px;
-        font-weight: 300;
-    }
-    p{
-        font-size: 16px;
+.alwaysmore{
+    position: fixed;
+    font-size: 40px;
+    font-weight: 100;
+    color: $c_white;
+    background-color: $c_dark;
+    padding: 10px;
+    right: 0px;
+    overflow: scroll;
+    width: 150px;
+    span{
+        display: block;
         padding: 0px 0px 20px 0px;
-        @include easing(350ms);
-        a{
-            color: $c_white;
-            @include easing(350ms);
+    }
+}
+.h{
+    font-size: 12px;
+    [class*='col-']{
+        padding: 0px;
+        padding-right: 0px;
+    }
+    // Left
+    .left{
+        .block{
+            background: url('../img/block.png');
+            height: 40px;
+            width: 40px;
+            background-size: 40px 40px;
+        }
+        .logo{
+            margin: 0px 0px 30px 0px;
+            span{
+                display: block;
+                &:first-of-type{margin: 0px 0px 8px 0px;}
+                &:last-of-type{margin: 8px 0px 0px 0px;}
+            }
+        }
+        .meta{@extend .logo;}
+        .yella{
+            @extend .logo;
+            position: relative;
+            margin: 30px 30px 0px 0px;
+            background-color: $c_hl;
+            line-height: 20px;
+            color: $c_hld;
+            font-size: 7px;
+            @include easing(500ms);
+            .o{
+                position: absolute;
+                bottom: -10px;
+                right: -10px;
+                background-color: rgba(255, 149, 139, 0.5);
+                width: 120px;
+                height: 40px;
+                @include easing(500ms);
+            }
             &:hover{
-                @include easing(350ms);
-                opacity: 0.3;
+                @include easing(500ms);
+                cursor: crosshair;
+                background-color: $c_blue;
+                color: $c_white;
+                .o{@include easing(500ms);background-color: $c_dark;height: 20px;}
             }
         }
     }
-    .a{
-        margin: 40px 0px;
-        a{
-            display: block;
-            text-decoration: none;
-            color: $c_white;
-            font-weight: 100;
-            padding: 20px 20px 20px 0px;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            font-size: 22px;
-            @include easing(350ms);
-            &:last-of-type{border-bottom: 0px;}
-            &:hover{
-                @include easing(350ms);
-                padding: 20px 20px 20px 20px;
-                opacity: 0.3;
+    // Right
+    .right{
+        border-left: 1px solid $c_dark;
+        nav{
+            margin: 0px 0px 0px 30px;
+            &:last-of-type{margin: 30px 0px 0px 30px;}
+            a{
+                display: block;
+                text-decoration: none;
+                color: $c_blue;
+                margin: 0px 0px 20px 0px;
+                max-width: 460px;
+                &:last-of-type{margin: 0px 0px 0px 0px;}
+                &:hover{
+                    color: lighten($c_dark, 40%);
+                    padding: 0px 0px 0px 5px;
+                    background-color: $c_hl;
+                }
+            }
+        }
+        p{
+            color: $c_dark;
+            line-height: 2;
+            max-width: 460px;
+            margin: 0px 0px 20px 30px;
+            &:first-of-type{margin: 30px 0px 20px 30px;}
+            &:last-of-type{margin: 30px 0px 0px 30px;}
+            a{
+                text-decoration: none;
+                color: lighten($c_dark, 40%);
+                &:hover{color: $c_blue;}
             }
         }
     }
