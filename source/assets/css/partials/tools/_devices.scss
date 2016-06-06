@@ -32,7 +32,6 @@
         .col-3-12{
             .left{
                 color: $c_blue;
-                border: 3px solid $c_blue;
                 padding: 20px;
                 margin: 30px 80px 30px 30px;
                 .yella{color: $c_white;}
@@ -41,7 +40,6 @@
         .col-9-12{
             .right{
                 background-color: 0px;
-                border: 3px solid $c_blue;
                 padding: 20px;
                 margin: 30px 60px 30px 30px;
                 nav{margin: 0px;}
@@ -53,12 +51,13 @@
             }
         }
     }
+    .grid-pad>[class*='col-']:last-of-type{padding-right: 0px;}
 }
 @media handheld, only screen and (max-width: 550px){
     .h{
         .col-3-12{
             .left{
-                margin: 10px 60px 10px 10px;
+                margin: 10px 10px 10px 10px;
                 .yella{
                     max-height: 80px;
                     overflow: hidden;
@@ -67,8 +66,10 @@
             }
         }
         .col-9-12{
+            padding-left: 0px;
+            padding-right: 0px;
             .right{
-                margin: 10px 40px 10px 10px;
+                margin: 10px 10px 10px 10px;
                 nav{
                     a{
                         white-space: nowrap;
