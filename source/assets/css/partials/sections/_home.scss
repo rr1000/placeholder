@@ -1,5 +1,6 @@
 body{
     background-color: $c_dark;
+    overflow-x: hidden;
     a{
         @include easing(350ms);
         &:hover{@include easing(350ms);}
@@ -21,7 +22,7 @@ body{
     }
 }
 .h{
-    font-size: 12px;
+    font-size: 14px;
     [class*='col-']{
         padding: 0px;
         padding-right: 0px;
@@ -80,35 +81,47 @@ body{
     .right{
         nav{
             margin: 0px 0px 0px 30px;
+            max-width: 520px;
             &:last-of-type{margin: 30px 0px 0px 30px;}
             a{
                 display: block;
                 text-decoration: none;
                 color: $c_white;
-                border-bottom: 2px solid lighten($c_dark, 10%);
                 padding: 15px 0px;
-                max-width: 460px;
+                &:first-of-type{padding-top: 0px;}
                 &:last-of-type{margin: 0px 0px 0px 0px;}
                 &:hover{
                     padding: 15px 0px 15px 5px;
                     color: darken($c_hl, 15%);
+                    &:first-of-type{padding-top: 0px;}
                 }
             }
         }
+        article{
+            padding: 30px;
+            margin: 15px 0px 0px 30px;
+            background-color: $c_white;
+            max-width: 550px;
+        }
         p{
-            color: $c_white;
+            color: $c_dark;
             line-height: 2;
-            max-width: 460px;
-            margin: 0px 0px 20px 30px;
-            &:first-of-type{margin: 30px 0px 20px 30px;}
-            &:last-of-type{margin: 30px 0px 0px 30px;}
+            font-weight: 400;
+            margin: 0px 0px 20px 0px;
+            &:last-of-type{margin-bottom: 0px;}
             a{
                 text-decoration: none;
-                color: lighten($c_dark, 40%);
-                &:hover{color: $c_white}
+                color: $c_blue;
+                &:hover{color: lighten($c_dark, 25%);}
             }
         }
     }
+}
+.phork{
+    font-size: 800px;
+    opacity: 0.05;
+    position: fixed;
+    color: $c_white;
 }
 // Canvas
 .canvas-wrapper{
