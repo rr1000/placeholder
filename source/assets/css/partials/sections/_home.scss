@@ -42,31 +42,17 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            display: block;
         }
     }
 }
-.wtfk{
-    position: relative;
-    margin: 0px 0px 100px 0px;
-    img{
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        position: relative;
-        z-index: 98;
-    }
-    p{
-        font-size: 250px;
-        color: $c_white;
-        word-wrap: break-word;
-        width: 100%;
-        z-index: 99;
-        top: 0px;
-        font-weight: 700;
-        left: 0px;
-        position: absolute;
-    }
+img{
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: -60px;
+    right: -60px;
 }
 .canvas-wrapper{
     position: fixed;
