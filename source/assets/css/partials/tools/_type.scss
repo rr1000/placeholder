@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300,400italic,500,700');
-$f_sans: 'Roboto Mono', monospace;
-$w_bold: 700;
-$w_reg: 400;
-$s_italic: italic;
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant:300,400,400i,500,600,700');
+$f_serif: 'Cormorant Infant', serif;
 body{
-    font-family: $f_sans;
-    font-size: 14px;
-    color: $c_dark;
+    font-family: $f_serif;
 }

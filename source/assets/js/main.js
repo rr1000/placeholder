@@ -2,7 +2,7 @@ $(document).ready(function(){
     console.log(new Date());
     (function(){
         window.addEventListener("load", windowLoadHandler, false);
-        var sphereRad = 40;
+        var sphereRad = 20;
         var Debugger = function(){};
         Debugger.log = function(message){
             try{console.log(message);}
@@ -57,11 +57,11 @@ $(document).ready(function(){
         init();
 
         function init(){
-            wait = 1;
+            wait = 50;
             count = wait - 1;
             numToAddEachFrame = 4;
-            r = 255;
-            g = 255;
+            r = 0;
+            g = 26;
             b = 255;
             rgbString = "rgba("+r+","+g+","+b+",";
             particleAlpha = 1;
@@ -69,7 +69,7 @@ $(document).ready(function(){
             displayWidth = theCanvas.width;
             displayHeight = theCanvas.height;
 
-            fLen = 1000;
+            fLen = 2000;
 
             projCenterX = displayWidth/2;
             projCenterY = displayHeight/2;
@@ -85,7 +85,7 @@ $(document).ready(function(){
 
             gravity = -0;
 
-            particleRad = 0.6;
+            particleRad = 0.8;
 
             sphereCenterX = 0;
             sphereCenterY = 0;
@@ -132,7 +132,7 @@ $(document).ready(function(){
             sinAngle = Math.sin(turnAngle);
             cosAngle = Math.cos(turnAngle);
 
-            context.fillStyle = "#121212";
+            context.fillStyle = "#ffffff";
             context.fillRect(0,0,displayWidth,displayHeight);
 
             p = particleList.first;

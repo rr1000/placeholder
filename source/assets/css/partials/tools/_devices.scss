@@ -1,14 +1,14 @@
-@media handheld, only screen and (max-width: 900px){
-    .grid-pad{padding: 0px;}
-    .canvas-wrapper{
-        width: 100%;
-        text-align: center;
-        right: 0px;
+@media handheld, only screen and (max-width: 850px){
+    .newnew{
+        padding: 50px 30px 0px 30px;
+        nav{padding: 0px;a{display: inline-block;}}
+        a,p{font-size: 18px;}
+        ul{margin-bottom: 30px;}
     }
-    .alwaysmore{
-        width: 50px;
-        color: $c_blue;
-        background-color: $c_white;
+    .wtfk{
+        padding: 0px 30px;
+        margin: 0px 0px 50px 0px;
+        p{font-size: 140px;}
     }
     .grid{
         width: 100%;
@@ -28,52 +28,8 @@
         padding-left: 0px;
         padding-right: 0px;
     }
-    .h{
-        .col-3-12{
-            .left{
-                color: $c_blue;
-                padding: 20px;
-                margin: 30px 80px 30px 30px;
-                .yella{color: $c_white;}
-            }
-        }
-        .col-9-12{
-            .right{
-                background-color: 0px;
-                padding: 20px;
-                margin: 30px 60px 30px 30px;
-                article{margin: 15px 0px 30px 0px;}
-                nav{margin: 0px;}
-            }
-        }
-    }
-    .grid-pad>[class*='col-']:last-of-type{padding-right: 0px;}
 }
-@media handheld, only screen and (max-width: 550px){
-    .h{
-        .col-3-12{
-            .left{
-                margin: 10px 10px 10px 10px;
-                .yella{
-                    max-height: 80px;
-                    overflow: hidden;
-                    display: none;
-                }
-            }
-        }
-        .col-9-12{
-            padding-left: 0px;
-            padding-right: 0px;
-            .right{
-                margin: 10px 10px 10px 10px;
-                nav{
-                    a{
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-                }
-            }
-        }
-    }
+
+@media handheld, only screen and (max-width: 400px){
+    .wtfk{p{font-size: 50px;}}
 }
