@@ -34,4 +34,21 @@ body{background-color: #F7F8FE;}
             color: lighten($c_dark, 45%);
         }
     }
+    .announcement{
+        font-family: 'Lucida Grande', sans-serif;
+        margin: 0px 0px 20px 0px;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 20px;
+        color: #202235;
+        background-color: $c_white;
+        @include box-shadow(0px 3px 7px lighten($c_garth, 70%));
+        @include border-radius(5px);
+        h1{font-weight: 900;padding: 0px 0px 20px 0px;}
+        h2{
+            padding: 0px 0px 20px 0px;
+            color: lighten($c_dark, 45%);
+            font-weight: 900;
+        }
+    }
 }
