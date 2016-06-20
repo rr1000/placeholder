@@ -1,9 +1,14 @@
-@media handheld, only screen and (max-width: 850px){
+@media handheld, only screen and (max-width: 500px){
     .newnew{
-        padding: 50px 30px 0px 30px;
-        nav{padding: 0px;a{display: inline-block;}}
-        a,p{font-size: 18px;}
-        ul{margin-bottom: 30px;}
+        padding: 30px;
+        nav{
+            a{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+            }
+        }
     }
     .grid{
         width: 100%;
@@ -23,12 +28,4 @@
         padding-left: 0px;
         padding-right: 0px;
     }
-    img{
-        top: -180px;
-        right: -150px;
-    }
-}
-
-@media handheld, only screen and (max-width: 400px){
-    .wtfk{p{font-size: 50px;}}
 }

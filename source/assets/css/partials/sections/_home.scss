@@ -1,61 +1,37 @@
+body{background-color: #F7F8FE;}
 .newnew{
-    padding: 100px 50px;
+    font-size: 18px;
+    color: $c_blue;
+    font-weight: 500;
+    padding: 50px 30px;
     a{
-        font-weight: 500;
-        border-bottom: 2px solid $c_blue;
         text-decoration: none;
-        display: block;
-        font-size: 22px;
-        color: $c_blue;
+        color: $c_link;
         @include easing(350ms);
         &:hover{
             @include easing(350ms);
-            border-bottom: 2px solid $c_dark;
             color: $c_dark;
         }
     }
-    ul{
-        max-width: 80%;
-        li{
-            display: inline-block;
-            margin: 0px 10px 20px 0px;
-            a{
-                display: inline-block;
+    p{
+        padding: 0px 0px 20px 0px;
+        line-height: 1.5;
+    }
+    nav{
+        a{
+            display: block;
+            line-height: 1.5;
+            &:hover{
+                padding: 0px 0px 0px 5px;
             }
         }
     }
-    p{
-        font-size: 22px;
-        color: $c_blue;
-        font-weight: 500;
-        padding: 0px 0px 30px 0px;
-        line-height: 1.3;
-        a{display: inline-block;padding: 0px 0px 0px 0px;}
-    }
-    nav{
-        padding: 0px 0px 0px 30px;
+    footer{
+        padding: 20px 0px 0px 0px;
+        p{color: $c_dark;}
         a{
-            margin: 0px 0px 30px 0px;
-            padding: 0px 0px 10px 0px;
-            display: inline-block;
-            &:hover{padding: 0px 0px 10px 10px;}
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            line-height: 1.5;
+            color: lighten($c_dark, 45%);
         }
     }
-}
-img{
-    width: 100%;
-    max-width: 420px;
-    height: auto;
-    display: block;
-    position: absolute;
-    top: -60px;
-    right: -60px;
-}
-.canvas-wrapper{
-    position: fixed;
-    left: 0px;
-    top: 0px;
 }
