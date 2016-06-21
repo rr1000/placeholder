@@ -16,6 +16,14 @@ body{background-color: #F7F8FE;}
     p{
         padding: 0px 0px 20px 0px;
         line-height: 1.5;
+        a.inline-tip{
+            top: -5px;
+            &:hover{
+                &:after{
+                    font-size: 14px;
+                }
+            }
+        }
     }
     nav{
         a{
@@ -49,6 +57,44 @@ body{background-color: #F7F8FE;}
             padding: 0px 0px 20px 0px;
             color: lighten($c_dark, 45%);
             font-weight: 900;
+        }
+    }
+}
+a.inline-tip{
+    display: inline-block;
+    line-height: 0.4;
+    text-align: center;
+    width: 25px;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    @include border-radius(5px);
+    font-size: 16px;
+    padding: 0px 0px 9px 0px;
+    color: $c_text;
+    @include easing(350ms);
+    &:hover{
+        @include easing(350ms);
+        color: $c_dark;
+        border: 1px solid $c_dark;
+        cursor: pointer;
+        &:after{
+            @include easing(350ms);
+            bottom: 26px;
+            content: attr(title);
+            left: 0px;
+            position: absolute;
+            z-index: 98;
+            font-size: 10px;
+            line-height: 1.5;
+            text-align: left;
+            padding: 10px;
+            color: $c_white;
+            background-color: $c_garth;
+            max-width: 200px;
+            min-width: 150px;
+            @include box-shadow(0px 3px 7px lighten($c_garth, 50%));
+            @include border-radius(5px);
         }
     }
 }
